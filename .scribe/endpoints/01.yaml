@@ -1,0 +1,293 @@
+name: 'Task management'
+description: |-
+
+  APIs for managing Tasks
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/tasks
+    metadata:
+      groupName: 'Task management'
+      groupDescription: |-
+
+        APIs for managing Tasks
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get All Tasks'
+      description: 'This endpoint Gives you Tasks.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer aefEghdac56DZV6134vk8bP'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/tasks
+    metadata:
+      groupName: 'Task management'
+      groupDescription: |-
+
+        APIs for managing Tasks
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a Task'
+      description: 'This endpoint stores Task.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: iafdampvrzmxamk
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      description:
+        name: description
+        description: ''
+        required: false
+        example: 'Minus quis corporis quos.'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      category_id:
+        name: category_id
+        description: ''
+        required: true
+        example: magnam
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      title: iafdampvrzmxamk
+      description: 'Minus quis corporis quos.'
+      category_id: magnam
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer P6DVcfav843habdZgE56ek1'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/tasks/{id}'
+    metadata:
+      groupName: 'Task management'
+      groupDescription: |-
+
+        APIs for managing Tasks
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Single Task'
+      description: 'This endpoint Gives Single Task.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the task.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer E48ae6hbvgPa61f3dDc5kZV'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/tasks/{id}'
+    metadata:
+      groupName: 'Task management'
+      groupDescription: |-
+
+        APIs for managing Tasks
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update a Task'
+      description: 'This endpoint Update Task.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the task.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: omeifkbstiglqlmdfj
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      description:
+        name: description
+        description: ''
+        required: false
+        example: 'Exercitationem est distinctio reiciendis officia atque ad.'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      category_id:
+        name: category_id
+        description: ''
+        required: false
+        example: null
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      title: omeifkbstiglqlmdfj
+      description: 'Exercitationem est distinctio reiciendis officia atque ad.'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer D648vgfb1hec36Vkaa5PZEd'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/tasks/{id}'
+    metadata:
+      groupName: 'Task management'
+      groupDescription: |-
+
+        APIs for managing Tasks
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'delete a Task'
+      description: 'This endpoint delete Task.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the task.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 5D6ahVgc4PbEdZk8a1e36fv'
+    controller: null
+    method: null
+    route: null
+    custom: []
