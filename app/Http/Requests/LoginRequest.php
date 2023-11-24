@@ -34,10 +34,13 @@ class LoginRequest extends FormRequest
      */
     public function authenticate()
     {
-        if (!Auth::attempt($this->only('email', 'password'))) {
+        $credentials = request(['email', 'password']);
+
+        if (!$token = auth()->attempt($credentials)) {
             throw ValidationException::withMessages([
                 'email' => 'Invalid credentials',
             ]);
         }
+        return $token;
     }
 }

@@ -6,69 +6,7 @@ endpoints:
   -
     httpMethods:
       - POST
-    uri: api/register
-    metadata:
-      groupName: 'Auth management'
-      groupDescription: |-
-
-        APIs for managing Authentications
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      name:
-        name: name
-        description: 'Must not be greater than 255 characters.'
-        required: true
-        example: ydaexpukaekpxto
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        custom: []
-      email:
-        name: email
-        description: 'Must be a valid email address. Must not be greater than 255 characters.'
-        required: true
-        example: abruen@example.org
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        custom: []
-      password:
-        name: password
-        description: 'Must be at least 8 characters.'
-        required: true
-        example: '&G!x=ibMka'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        custom: []
-    cleanBodyParameters:
-      name: ydaexpukaekpxto
-      email: abruen@example.org
-      password: '&G!x=ibMka'
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - POST
-    uri: api/login
+    uri: api/auth/login
     metadata:
       groupName: 'Auth management'
       groupDescription: |-
@@ -92,7 +30,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: katelynn.goodwin@example.com
+        example: yundt.melisa@example.com
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -101,18 +39,188 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: 'T{u+!!GY'
+        example: ~>VxI+@
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      email: katelynn.goodwin@example.com
-      password: 'T{u+!!GY'
+      email: yundt.melisa@example.com
+      password: ~>VxI+@
     fileParameters: []
     responses: []
     responseFields: []
     auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/auth/register
+    metadata:
+      groupName: 'Auth management'
+      groupDescription: |-
+
+        APIs for managing Authentications
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: jbguiefkldfg
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address. Must not be greater than 255 characters.'
+        required: true
+        example: domenico.pfannerstill@example.org
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      password:
+        name: password
+        description: 'Must be at least 8 characters.'
+        required: true
+        example: "C(Y&3,NG)'=TSec]."
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      name: jbguiefkldfg
+      email: domenico.pfannerstill@example.org
+      password: "C(Y&3,NG)'=TSec]."
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/auth/logout
+    metadata:
+      groupName: 'Auth management'
+      groupDescription: |-
+
+        APIs for managing Authentications
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Log the user out (Invalidate the token).'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer aePZV3Ebh656akg84fcdDv1'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/auth/refresh
+    metadata:
+      groupName: 'Auth management'
+      groupDescription: |-
+
+        APIs for managing Authentications
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Refresh a token.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 46khbaVegdD5vZf61aP3c8E'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/auth/me
+    metadata:
+      groupName: 'Auth management'
+      groupDescription: |-
+
+        APIs for managing Authentications
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get the authenticated User.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer hV1ZbaPDvegdafc68653Ek4'
     controller: null
     method: null
     route: null

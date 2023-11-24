@@ -43,7 +43,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer aefEghdac56DZV6134vk8bP'
+      - 'Bearer 3geb461v8cadfED5PVakhZ6'
     controller: null
     method: null
     route: null
@@ -76,7 +76,7 @@ endpoints:
         name: title
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: iafdampvrzmxamk
+        example: cjwecu
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -85,7 +85,7 @@ endpoints:
         name: description
         description: ''
         required: false
-        example: 'Minus quis corporis quos.'
+        example: 'Nisi voluptatum veritatis minus voluptatem facilis et qui.'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -94,22 +94,22 @@ endpoints:
         name: category_id
         description: ''
         required: true
-        example: magnam
+        example: quisquam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      title: iafdampvrzmxamk
-      description: 'Minus quis corporis quos.'
-      category_id: magnam
+      title: cjwecu
+      description: 'Nisi voluptatum veritatis minus voluptatem facilis et qui.'
+      category_id: quisquam
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer P6DVcfav843habdZgE56ek1'
+      - 'Bearer g6cv8ZDVa5bEfkP4d63eah1'
     controller: null
     method: null
     route: null
@@ -164,7 +164,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer E48ae6hbvgPa61f3dDc5kZV'
+      - 'Bearer 8dfe1h3bPaZkDVacEg6465v'
     controller: null
     method: null
     route: null
@@ -208,7 +208,7 @@ endpoints:
         name: title
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: omeifkbstiglqlmdfj
+        example: wlizxwdkxa
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -217,7 +217,7 @@ endpoints:
         name: description
         description: ''
         required: false
-        example: 'Exercitationem est distinctio reiciendis officia atque ad.'
+        example: 'Iste minus in laborum itaque necessitatibus minus libero.'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -232,15 +232,15 @@ endpoints:
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      title: omeifkbstiglqlmdfj
-      description: 'Exercitationem est distinctio reiciendis officia atque ad.'
+      title: wlizxwdkxa
+      description: 'Iste minus in laborum itaque necessitatibus minus libero.'
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer D648vgfb1hec36Vkaa5PZEd'
+      - 'Bearer 36edbf8vZ1P5a6gE4hkaDVc'
     controller: null
     method: null
     route: null
@@ -286,7 +286,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 5D6ahVgc4PbEdZk8a1e36fv'
+      - 'Bearer cV3kdfE8eDbaghv4Pa5616Z'
     controller: null
     method: null
     route: null

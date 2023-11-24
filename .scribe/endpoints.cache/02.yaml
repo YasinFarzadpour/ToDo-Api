@@ -45,7 +45,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer Dbe5ha8dEc64Z61vP3kgafV'
+      - 'Bearer 63D4Vgb65c8Z1vPkhdaaEef'
     controller: null
     method: null
     route: null
@@ -78,20 +78,20 @@ endpoints:
         name: title
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: aobfoxmgnf
+        example: cpznqqtkrwmbccrhhzvtpxes
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      title: aobfoxmgnf
+      title: cpznqqtkrwmbccrhhzvtpxes
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer k6P6g1V4fbeaE5vhdZD3ac8'
+      - 'Bearer VEd6h1aba6vk58Pe3Dgc4fZ'
     controller: null
     method: null
     route: null
@@ -146,7 +146,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 83afbe5hD4adP6EcgvZk1V6'
+      - 'Bearer gfeba65kaDEchdv1V436Z8P'
     controller: null
     method: null
     route: null
@@ -190,20 +190,20 @@ endpoints:
         name: title
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: vcgyrbe
+        example: thdzja
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      title: vcgyrbe
+      title: thdzja
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer Vced6kfa6gD3a1hb58vE4PZ'
+      - 'Bearer cEe5gkb8Z6VvPafDdah1346'
     controller: null
     method: null
     route: null
@@ -249,7 +249,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer be8aD3hkdE4cPfVva1g65Z6'
+      - 'Bearer fPdDhb1kec835V6v6gaZaE4'
     controller: null
     method: null
     route: null

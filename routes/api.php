@@ -17,10 +17,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
+//Route::post('/register', [AuthController::class, 'register']);
+//Route::post('/login', [AuthController::class, 'login']);
+Route::group([
+    'prefix' => 'auth'
 
-Route::middleware('auth:sanctum')->group(function () {
+], function ($router) {
+
+    Route::post('login', [AuthController::class, 'login']);
+    Route::post('register', [AuthController::class, 'register']);
+    Route::post('logout', [AuthController::class, 'logout']);
+    Route::post('refresh', [AuthController::class, 'refresh']);
+    Route::post('me', [AuthController::class, 'me']);
+
+});
+
+Route::middleware('auth:api')->group(function () {
     Route::resource('/tasks', TaskController::class);
     Route::resource('/categories', CategoryController::class);
 });
